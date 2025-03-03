@@ -43,9 +43,10 @@ Layer	Implementation
 - ngrok (for Alexa testing) (Optional)
 - OpenSSL (for Security)
 
-## Install OpenSSL: 
-- from (https://code.google.com/archive/p/openssl-for-windows/downloads) (for Windows Users)
+## Install OpenSSL and MoongoDb: 
+- OpenSSL from (https://code.google.com/archive/p/openssl-for-windows/downloads) (for Windows Users)
 - Add to Env variables. (make sure openssl.exe and openssl.conf file are in same directory , if not provide path for both.)
+- MongoDB Shell from (https://www.mongodb.com/try/download/shell)
 
 ```bash
 # Clone the repo
@@ -79,6 +80,10 @@ Create Bucket : Bucket_Name
 
 Start Backend:
 uvicorn app.main:app --reload
+
+Ensuer MongoDb is Running:
+mongosh --version
+mongosh mongodb://localhost:27017/smart_energy(Name 
 
 Register a Device :
 Power Shell : 
